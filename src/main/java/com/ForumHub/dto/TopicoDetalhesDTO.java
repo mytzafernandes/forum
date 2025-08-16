@@ -1,5 +1,3 @@
-
-
 package com.forumhub.dto;
 
 import java.time.LocalDateTime;

@@ -1,9 +1,8 @@
-
 package com.forumhub.model;
-
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -24,7 +23,6 @@ public class Topico {
 
     private String mensagem;
 
-    private LocalDateTime dataCriacao = LocalDateTime.now();
+    @CreationTimestamp // ✅ Preenche automaticamente com a data/hora atual ao salvar
+    private LocalDateTime dataCriacao;
 }
-
-
